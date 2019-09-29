@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #f0f0f0;
+  --secondary-color: #0b0b0c;
+  --font-color: #000;
+  --bg-color: #fff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #666;
+  --secondary-color: #ffff;
+  --font-color: #fff;
+  --bg-color: #000;
+}
+
+html * {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+body {
+  background-color: var(--bg-color);
+}
+.calculator {
+  margin: auto;
+  margin-top: 20px;
+  width: 725px;
+  height: 530px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-image: linear-gradient(#939393, #656565);
+}
+
+.calculator-inputs-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.operatorStyle {
+  font-weight: 100;
+  font-family: 'open sans light',arial,sans-serif;;
+}
+
+button.calc-input {
+  width: 150px;
+  height: 48px;
+  border: 1px solid white;
+  font-size: 30px;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+
+button.calc-input.zero {
+  width: 184px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+button.calc-input.operator {
+  width: 150px;
+  background: var(--primary-color);
+  color: var(--font-color);
+  border: 1px solid white;
+  box-sizing: border-box;
+  padding-bottom: 6px;
+}
+
+.calculator-results {
+  text-align: right;
+}
+
+.calculator-results div:first-child {
+  color: #FFFFFF;
+  font-size: 40px;
+  height: 55px;
+}
+
+.calculator-results div:last-child {
+  color: #C1C1C1;
+  font-size: 30px;
+}
+
+.calculationDisplay, .resultDisplay {
+  background: black;
+  overflow: hidden;
+  white-space:nowrap;
+}
+
+button.scientificMode {
+  width: 150px;
+  height: 48px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  background: var(--primary-color);
+  border: 1px solid white;
+  color: var(--font-color);
+}
+button.smode {
+  width: 150px;
+  height: 48px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  background: var(--primary-color);
+  border: 1px solid white;
+  color: var(--font-color);
+}
+button.smode:disabled{
+  background: var(--secondary-color);
+}
+button.theme {
+  width: 150px;
+  height: 48px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  background: var(--primary-color);
+  border: 1px solid white;
+  color: var(--font-color);
+}
