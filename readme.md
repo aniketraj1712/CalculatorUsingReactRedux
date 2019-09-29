@@ -1,0 +1,1 @@
+## Inorder to run this app, go to the folder and type "npm start"
